@@ -827,7 +827,7 @@ static void qcom_lpm_suspend_trace(void *unused, const char *action,
 
 static struct cpuidle_governor lpm_governor = {
 	.name =		"qcom-cpu-lpm",
-	.rating =	50,
+	.rating =	10,
 	.enable =	lpm_enable_device,
 	.disable =	lpm_disable_device,
 	.select =	lpm_select,
