@@ -3782,11 +3782,7 @@ static int vibrator_init(struct aw_haptic *aw_haptic)
 	if (!ret)
 		aw_haptic->vib_dev.name = "vibrator_r";
 #else
-#ifdef KERNEL_OVER_5_10
-	aw_haptic->vib_dev.name = "aw_vibrator";
-#else
 	aw_haptic->vib_dev.name = "vibrator";
-#endif
 #endif
 	aw_haptic->vib_dev.brightness_get = brightness_get;
 	aw_haptic->vib_dev.brightness_set = brightness_set;
