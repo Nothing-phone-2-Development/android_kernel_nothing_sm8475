@@ -249,7 +249,7 @@ struct block_device *get_target_partition_block_device(char* partition_label)
 	return NULL;
 }
 
-static int bootloader_count_init_from_nt_uefi() {
+static int bootloader_count_init_from_nt_uefi(void) {
 	struct block_device *bdev = NULL;
 	struct file target_partition_file;
 
