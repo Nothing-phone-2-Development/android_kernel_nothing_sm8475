@@ -60,11 +60,11 @@
 	perst-gpio = <&tlmm 58 0x1>;
 };
 
-&pcie_qmp0 {
+&pcie_phy0 {
 	status = "okay";
 };
 
-&pcie_qmp1 {
+&pcie_phy1 {
 	status = "okay";
 };
 
