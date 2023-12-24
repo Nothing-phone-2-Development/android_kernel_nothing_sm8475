@@ -5,15 +5,6 @@
 # Copyright (c) 2021, Linaro Ltd.
 #
 
-config MHI_BUS_MISC
-	bool "Support for miscellaneous MHI features"
-	depends on MHI_BUS
-	help
-	  Miscellaneous features support for MHI Bus driver includes IPC logs,
-	  introduction of a list of controllers for debug using ramdumps and
-	  other features not present upstream such as Dynamic Resource Vote,
-	  SFR parsing using RDDM dumps, scanning for the RDDM cookie and more.
-
 source "drivers/bus/mhi/devices/Kconfig"
 source "drivers/bus/mhi/controllers/Kconfig"
 source "drivers/bus/mhi/host/Kconfig"
